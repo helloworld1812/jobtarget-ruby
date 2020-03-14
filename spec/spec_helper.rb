@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "jobtarget/ruby"
+require "jobtarget"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
