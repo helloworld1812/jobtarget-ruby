@@ -124,8 +124,8 @@ module Jobtarget
       end
 
       def params_with_token(params)
-        if opts[:token] && (params['token'].blank? or params['token'].blank?)
-          raise Jobtarget::ConfigurationError.new("'#{p}' not passed") unless instance_variable_get "@#{p}"
+        if params['token'].nil? && params[:token].nil?
+          raise Jobtarget::ConfigurationError.new("token not passed")
         end
 
         params

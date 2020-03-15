@@ -35,6 +35,7 @@ module Jobtarget
         puts '-----------get response start-------------------'
         puts response
         puts '-----------get response end-------------------'
+        response
       end
 
       # Get Site Info - /api/employer/jobsites/getsiteinfo
@@ -93,14 +94,13 @@ module Jobtarget
       #                       "displayOptions": null
       #                     }]
       #   }
-      def get
+      def get(opts = {})
         path = '/api/employer/jobsites/getsiteinfo'
-        options = { params: {}, token: true }
+        options = opts.merge(token: true)
         response = Jobtarget::Connection.post_json(path, options)
         puts '-----------get response start-------------------'
         puts response
         puts '-----------get response end-------------------'
-        # response['objects'].map { |b| new(b) }
         response
       end
 

@@ -26,13 +26,7 @@ module Jobtarget
       #   {
       #     "status": 0,
       #     "message": "success",
-      #     "sites": [
-      #       {
-      #         "site_id": 7131,
-      #         "site_name": "American College of Nurse-Midwives - Midwifejobs.com",
-      #         "niche": "Nursing"
-      #       }
-      #     ]
+      #     "inventory": []
       #   }
       def query(opts = {})
         path = '/api/employer/media/inventory'
@@ -41,6 +35,7 @@ module Jobtarget
         puts '-----------get response start-------------------'
         puts response
         puts '-----------get response end-------------------'
+        response
       end
 
     end

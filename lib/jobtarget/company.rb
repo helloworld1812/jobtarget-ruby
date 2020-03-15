@@ -34,7 +34,7 @@ module Jobtarget
       #     "status": 0,
       #     "message": "success"
       #   }
-      def application
+      def application(opts = {})
         path = '/api/employer/company/applicantdata'
         options = { params: opts[:params] || {}, token: true }
         response = Jobtarget::Connection.post_json(path, options)

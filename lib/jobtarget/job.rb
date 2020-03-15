@@ -543,7 +543,7 @@ module Jobtarget
         response
       end
 
-      # Create Posting - /api/employer/jobs/createposting
+      # Stop Posting - /api/employer/jobs/stopposting
       # params
       #   token - the user token that must be passed to authenicate API access
       #   job_id - OneClick’s unique id number for the job whose posting you wish to stop
