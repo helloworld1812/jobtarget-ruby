@@ -4,12 +4,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "jobtarget/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "jobtarget"
+  spec.name          = "jobtarget-ruby"
   spec.version       = Jobtarget::VERSION
   spec.authors       = ["Workstream"]
   spec.email         = ["david@workstream.is"]
 
-  spec.summary       = %q{Jobtargetis a wrapper for the Job Target REST API}
+  spec.summary       = %q{Jobtarget is a wrapper for the Job Target REST API}
   spec.homepage      = "https://github.com/helloworld1812/jobtarget-ruby"
   spec.license       = "MIT"
 
