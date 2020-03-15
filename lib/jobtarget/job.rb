@@ -438,7 +438,7 @@ module Jobtarget
       #               ]
       #   }
       def division_jobs(opts = {})
-        path = '/api/employer/jobs/jobdetails'
+        path = '/api/employer/jobs/userdivisionjobs'
         options = opts.merge(token: true)
         response = Jobtarget::Connection.post_json(path, options)
         puts '-----------get response start-------------------'
