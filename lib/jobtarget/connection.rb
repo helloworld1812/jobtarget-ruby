@@ -19,7 +19,7 @@ module Jobtarget
       end
 
       def post_json(path, opts)
-        no_parse = opts[:params].delete(:no_parse) { false }
+        no_parse = opts[:params]&.delete(:no_parse) { false }
 
         url = generate_url(path)
         params = generate_params(opts)
@@ -40,7 +40,7 @@ module Jobtarget
       end
 
       def put_json(path, opts)
-        no_parse = opts[:params].delete(:no_parse) { false }
+        no_parse = opts[:params]&.delete(:no_parse) { false }
         url = generate_url(path)
         params = generate_params(opts)
 

@@ -8,7 +8,7 @@ module Jobtarget
       #   token - the user token that must be passed to authenticate API access
       #   search - keyword to search job site name
       #   {
-      #     "token": "4958991c-06a7-abcd-aa01-98b3bae42292",
+      #     "token": "USER_TOKEN_VALUE",
       #     "search": "nurse"
       #   }
       # response
@@ -94,7 +94,7 @@ module Jobtarget
       #                     }]
       #   }
       def get
-        path = '/api/employer/company/getcompaniesviaptoken'
+        path = '/api/employer/jobsites/getsiteinfo'
         options = { params: {}, token: true }
         response = Jobtarget::Connection.post_json(path, options)
         puts '-----------get response start-------------------'

@@ -8,7 +8,7 @@ module Jobtarget
       # params
       #   token - the user token that must be passed to authenticate API access
       #   {
-      #     "token": "4958991c-abcd-abcd-aa01-98b3bae42292",
+      #     "token": "USER_TOKEN_VALUE",
       #   }
       # response
       #   status - 0 indicates success. Anything else indicates an issue

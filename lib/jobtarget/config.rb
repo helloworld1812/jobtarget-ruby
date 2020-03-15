@@ -6,7 +6,7 @@ module Jobtarget
   class Config
     DEFAULT_LOGGER = Logger.new(nil)
     DEFAULT_BASE_URL = "https://stagingatsapi.jobtarget.com".freeze
-    DEFAULT_TIMEOUT = 10.freeze
+    DEFAULT_TIMEOUT = 30.freeze
 
     class << self
       attr_accessor :p_token, :base_url, :logger, :read_timeout, :open_timeout

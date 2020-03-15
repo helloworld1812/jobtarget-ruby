@@ -1,7 +1,13 @@
 require "jobtarget/version"
 require 'httparty'
 require 'jobtarget/config'
-require 'jobtarget/company'
+require 'jobtarget/partner/company'
+require 'jobtarget/partner/job'
+require 'jobtarget/partner/user'
+require 'jobtarget/job_site'
+require 'jobtarget/job'
+require 'jobtarget/user'
+require 'jobtarget/inventory'
 
 module Jobtarget
   class Error < StandardError; end
