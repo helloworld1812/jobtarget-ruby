@@ -79,6 +79,20 @@ module Jobtarget
         #   user_type – the user role as defined in OneClick for the newly created user
         #   company_name – the name of the company associated with this user.
         #   added_date – the date the user was created
+        #   {
+        #     "status": 0,
+        #     "message": "success",
+        #     "user": {
+        #       "user_id": 1001493,
+        #       "first_name": "John",
+        #       "last_name": "smith111",
+        #       "title": "senior recruiter111",
+        #       "email": "john.smith111@gmail.com",
+        #       "user_type": "Recruiter",
+        #       "company_name": "Workstream Gem API",
+        #       "added_date": "03/16/2020"
+        #     }
+        #   }
         def create(opts = {})
           path = '/api/employer/user/create'
           options = opts.merge(p_token: true)
