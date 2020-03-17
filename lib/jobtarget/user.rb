@@ -13,6 +13,11 @@ module Jobtarget
       #   status - 0 indicates success. Anything else indicates an issue
       #   message - message related to the Status
       #   login_url - the URL to use to SSO the user into OneClick
+      #   {
+      #     "status": 0,
+      #     "message": "success",
+      #     "login_url": "https://jtbosocwebuat01.jobtarget.com/oc/sso/3e73c826-c282-416e-8568-effae808ede7"
+      #   }
       def login(opts = {})
         path = '/api/employer/user/login'
         options = opts.merge(token: true)
@@ -44,6 +49,22 @@ module Jobtarget
       #   billing_zip - The zip code
       #   billing_country - The billing
       #   company_id - The unique company ID in JobTarget
+      #   {
+      #     "status": 0,
+      #     "message": "success",
+      #     "user_id": 1001493,
+      #     "first_name": "John",
+      #     "last_name": "smith111",
+      #     "title": "senior recruiter111",
+      #     "email": "john.smith111@gmail.com",
+      #     "user_type": "Recruiter",
+      #     "billing_street_address": "",
+      #     "billing_city": "",
+      #     "billing_state": "",
+      #     "billing_zip": "",
+      #     "billing_country": "",
+      #     "company_id": "33032"
+      #   }
       def info(opts = {})
         path = '/api/employer/user/info'
         options = opts.merge(token: true)

@@ -120,8 +120,7 @@ module Jobtarget
         #       "title": "senior recruiter",
         #       "email": "john.smith@gmail.com",
         #       "is_admin": 0,
-        #       "company_id": 0,
-        #       "external_user_id": "0"
+        #       "is_active": 0,
         #     }
         #   }
         # response
