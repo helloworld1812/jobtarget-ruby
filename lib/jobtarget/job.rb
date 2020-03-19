@@ -346,6 +346,60 @@ module Jobtarget
       #   apps – the aggregate count of applications delivered from this job posting
       #   interviews – the aggregate count of interviews created from the applicants of this job posting
       #   hires – the aggregate count of hires created from the applicants of this job posting
+      #   {
+      #     "status": 0,
+      #     "message": "success",
+      #     "job_id": 26782030,
+      #     "job_manage_url": "https://jtbosocwebuat01.jobtarget.com/oc/sso/edit/61a62e58-8367-4085-975a-de29e5d2c3d4/26782030",
+      #     "job_post_url": "https://jtbosocwebuat01.jobtarget.com/oc/sso/post/61a62e58-8367-4085-975a-de29e5d2c3d4/26782030",
+      #     "marketplace_iframe": "https://jtbosocwebuat01.jobtarget.com/oc/sso/partner/61a62e58-8367-4085-975a-de29e5d2c3d4/26782030",
+      #     "job_analytics": {
+      #       "views": 0,
+      #       "views_new": 0,
+      #       "visits": 0,
+      #       "visits_new": 0,
+      #       "apps": 0,
+      #       "apps_new": 0,
+      #       "interviews": 0,
+      #       "hires": 0
+      #     },
+      #     "job_details": {
+      #       "apply_url": "http://www.applyhere.com/234",
+      #       "city": "Groton",
+      #       "company": "ABC Corp",
+      #       "contact_email": "",
+      #       "contact_ext": "",
+      #       "contact_name": "",
+      #       "contact_phone": "",
+      #       "country": "United States",
+      #       "description": "you have to do dba stuff and work with devs",
+      #       "duration": "",
+      #       "education": "",
+      #       "entrylevel": "0",
+      #       "experience": "",
+      #       "function": "Manufacturing",
+      #       "industry": "",
+      #       "job_type": "",
+      #       "requisition_name": "my-new-job",
+      #       "position": "SQL DBA",
+      #       "requirements": "",
+      #       "salary_high": "",
+      #       "salary_low": "",
+      #       "salary_type": "",
+      #       "state": "Connecticut",
+      #       "travel": "",
+      #       "zip": "06340",
+      #       "location": [
+      #                      {
+      #                        "city": "Groton",
+      #                        "state": "Connecticut",
+      #                        "zip": "06340",
+      #                        "country": "United States"
+      #                      }
+      #                    ]
+      #     },
+      #     "postings": []
+      #   }
       def get(opts = {})
         path = '/api/employer/jobs/jobdetails'
         options = opts.merge(token: true)
@@ -562,6 +616,49 @@ module Jobtarget
       #   }
       def stop_posting(opts = {})
         path = '/api/employer/jobs/stopposting'
+        options = opts.merge(token: true)
+        response = Jobtarget::Connection.post_json(path, options)
+        puts '-----------get response start-------------------'
+        puts response
+        puts '-----------get response end-------------------'
+        response
+      end
+
+      # Edit Location - /api/employer/jobs/edit_location
+      # params
+      #   token - the user token that must be passed to authenicate API access
+      #   job_id - OneClick’s unique id number for the job whose posting you wish to stop
+      #   type - this the entity whose location you want to update, either "job" or "posting"
+      #   posting_id - (optional) this value is only required when the "type" is set to "posting"
+      #   city - the city that this position is to be located in
+      #   state – the state code representing the state where this job opening is located. (Find lookup in Reference section)
+      #   zip - the zip code that this position is to be located in
+      #   country – the ISO code representing the country where this job opening is located. (Find lookup in Reference section)
+      #   external_location_id – the location code representing the location in your system
+      #   {
+      #     "token": "USER_TOKEN_VALUE",
+      #     "job_id": "26735088",
+      #     "type": "posting",
+      #     "posting_id": 118146074,
+      #     "location": [
+      #                {
+      #                  "city": "New York City",
+      #                  "state": "NY",
+      #                  "country": "US",
+      #                  "zip": "10004",
+      #                  "external_location_id": "NY_123545"
+      #                }
+      #              ]
+      #   }
+      # response
+      #   status - 0 indicates success. Anything else indicates an issue
+      #   message - message related to the Status
+      #   {
+      #     "status": 0,
+      #     "message": "success",
+      #   }
+      def edit_location(opts = {})
+        path = '/api/employer/jobs/edit_location'
         options = opts.merge(token: true)
         response = Jobtarget::Connection.post_json(path, options)
         puts '-----------get response start-------------------'

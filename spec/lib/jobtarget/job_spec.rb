@@ -130,4 +130,43 @@ RSpec.describe Jobtarget::Job do
     end
   end
 
+  describe '#edit_location' do
+    it "Edit Location for job" do
+      params = {
+        token: token,
+        job_id: default_job['job_id'],
+        type: 'job',
+        location: [{
+                   city: "New York City",
+                   state: "NY",
+                   country: "US",
+                   zip: "10004",
+                   external_location_id: "NY_1235451"
+                 }]
+      }
+      opts = { params: params }
+      response = JobTarget::Job.stop_posting(opts)
+      expect(response['status']).to be(0)
+    end
+
+    it "Edit Location for posting" do
+      params = {
+        token: token,
+        job_id: default_job['job_id'],
+        type: 'positing',
+        posting_id: 118182313,
+        location: [{
+                     city: "New York City",
+                     state: "NY",
+                     country: "US",
+                     zip: "10004",
+                     external_location_id: "NY_1235451"
+                   }]
+      }
+      opts = { params: params }
+      response = JobTarget::Job.stop_posting(opts)
+      expect(response['status']).to be(0)
+    end
+  end
+
 end
