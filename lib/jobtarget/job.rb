@@ -640,15 +640,13 @@ module Jobtarget
       #     "job_id": "26735088",
       #     "type": "posting",
       #     "posting_id": 118146074,
-      #     "location": [
-      #                {
+      #     "location": [{
       #                  "city": "New York City",
       #                  "state": "NY",
       #                  "country": "US",
       #                  "zip": "10004",
       #                  "external_location_id": "NY_123545"
-      #                }
-      #              ]
+      #                }]
       #   }
       # response
       #   status - 0 indicates success. Anything else indicates an issue

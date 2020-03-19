@@ -145,7 +145,7 @@ RSpec.describe Jobtarget::Job do
                  }]
       }
       opts = { params: params }
-      response = JobTarget::Job.stop_posting(opts)
+      response = JobTarget::Job.edit_location(opts)
       expect(response['status']).to be(0)
     end
 
@@ -153,7 +153,7 @@ RSpec.describe Jobtarget::Job do
       params = {
         token: token,
         job_id: default_job['job_id'],
-        type: 'positing',
+        type: 'posting',
         posting_id: 118182313,
         location: [{
                      city: "New York City",
@@ -164,7 +164,7 @@ RSpec.describe Jobtarget::Job do
                    }]
       }
       opts = { params: params }
-      response = JobTarget::Job.stop_posting(opts)
+      response = JobTarget::Job.edit_location(opts)
       expect(response['status']).to be(0)
     end
   end
