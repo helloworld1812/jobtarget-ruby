@@ -121,6 +121,28 @@ module Jobtarget
       #   https://www.jobtarget.com/oc/sso/cc/7abd283d-e86c-4498-a85d-4255f0030729?url=https%3A%2F%2Fwww.google.com
       #
       #   Please ensure that the URL is URL Encoded.
+      #   {
+      #     "status": 0,
+      #     "message": "success",
+      #     "managecc_url": "https://jtbosocwebuat01.jobtarget.com/oc/sso/cc/d1c38217-4fbb-477a-984c-356301a7f756",
+      #     "cards": [
+      #                 {
+      #                   "cc_id": "CARD-9B206924J92117740LZ5BFMY",
+      #                   "name_on_card": "Zacharia Bickerton",
+      #                   "type": "VISA",
+      #                   "number": "xxxxxxxxxxxx2562",
+      #                   "exp_month": 12,
+      #                   "exp_year": 2025,
+      #                   "address": {
+      #                     "address": "96308 Hudson Park",
+      #                     "city": "Los Angeles",
+      #                     "state": "CA",
+      #                     "country": "US",
+      #                     "zipcode": "10044"
+      #                   }
+      #                 }
+      #               ]
+      #   }
       def credit_cards(opts = {})
         path = '/api/employer/user/creditcards'
         options = opts.merge(token: true)

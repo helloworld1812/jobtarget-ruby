@@ -13,8 +13,8 @@ require 'jobtarget/inventory'
 module Jobtarget
   class Error < StandardError; end
 
-  def self.configure(config = {})
-    Jobtarget::Config.configure(config)
+  def self.configure(p_token, base_url = '')
+    Jobtarget::Config.configure(p_token, base_url)
   end
 
 end

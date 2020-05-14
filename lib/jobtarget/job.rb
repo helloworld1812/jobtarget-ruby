@@ -349,10 +349,10 @@ module Jobtarget
       #   {
       #     "status": 0,
       #     "message": "success",
-      #     "job_id": 26782030,
-      #     "job_manage_url": "https://jtbosocwebuat01.jobtarget.com/oc/sso/edit/61a62e58-8367-4085-975a-de29e5d2c3d4/26782030",
-      #     "job_post_url": "https://jtbosocwebuat01.jobtarget.com/oc/sso/post/61a62e58-8367-4085-975a-de29e5d2c3d4/26782030",
-      #     "marketplace_iframe": "https://jtbosocwebuat01.jobtarget.com/oc/sso/partner/61a62e58-8367-4085-975a-de29e5d2c3d4/26782030",
+      #     "job_id": 26784207,
+      #     "job_manage_url": "https://jtbosocwebuat01.jobtarget.com/oc/sso/edit/1cc5362f-49d7-4a69-9ab6-02fa03024c29/26784207",
+      #     "job_post_url": "https://jtbosocwebuat01.jobtarget.com/oc/sso/post/1cc5362f-49d7-4a69-9ab6-02fa03024c29/26784207",
+      #     "marketplace_iframe": "https://jtbosocwebuat01.jobtarget.com/oc/sso/partner/1cc5362f-49d7-4a69-9ab6-02fa03024c29/26784207",
       #     "job_analytics": {
       #       "views": 0,
       #       "views_new": 0,
@@ -364,41 +364,130 @@ module Jobtarget
       #       "hires": 0
       #     },
       #     "job_details": {
-      #       "apply_url": "http://www.applyhere.com/234",
-      #       "city": "Groton",
-      #       "company": "ABC Corp",
+      #       "apply_url": "https://jobs-dev.workstream.is/positions/workdone/f4d3e2c9839d3b83251c177cfbbf62c6aead50a6/apply?referer_source=JobTarget&locale=en",
+      #       "city": "Beijing",
+      #       "company": "Workdone",
       #       "contact_email": "",
       #       "contact_ext": "",
       #       "contact_name": "",
       #       "contact_phone": "",
-      #       "country": "United States",
-      #       "description": "you have to do dba stuff and work with devs",
+      #       "country": "China",
+      #       "description": "We are looking for web, mobile, machine learning, and specialist developers to help build great products for customers. You will work as a freelancer and can take on different projects for exciting startup and enterprise clients. Every project has a Product Manager who will provide you with detailed specs and will be the go-between you and the client. You will be responsible for delivering on pre-determined milestones, typically on a bi-weekly basis, and will be compensated for each completed milestone.\n\nIdeal candidates are stellar, proven engineers educated at top Computer Science schools with deep professional and personal project experience who thrive working in remote teams. You should be excited about delivering beautiful, maintainable, bug-free code to spec, and meeting or beating deadlines.\n\nOur Beijing location serves our broadly APAC clients. You will need a valid VPN in order to collaborate with teammates in the US, as well as being available in early mornings (afternoon Pacific Time) as needed to speak with clients.. Team meetings are usually done via video calls.\n\nSuccessful candidates can showcase a portfolio of products they've built in the past, and demonstrate experience working with a distributed team. ",
       #       "duration": "",
       #       "education": "",
       #       "entrylevel": "0",
       #       "experience": "",
-      #       "function": "Manufacturing",
+      #       "function": "",
       #       "industry": "",
       #       "job_type": "",
-      #       "requisition_name": "my-new-job",
-      #       "position": "SQL DBA",
+      #       "requisition_name": "workstream-development-137-Engineer-100",
+      #       "position": "Engineer Beijing",
       #       "requirements": "",
       #       "salary_high": "",
       #       "salary_low": "",
       #       "salary_type": "",
-      #       "state": "Connecticut",
+      #       "state": "Beijing",
       #       "travel": "",
-      #       "zip": "06340",
+      #       "zip": "100006",
       #       "location": [
       #                      {
-      #                        "city": "Groton",
-      #                        "state": "Connecticut",
-      #                        "zip": "06340",
-      #                        "country": "United States"
+      #                        "city": "Beijing",
+      #                        "state": "Beijing",
+      #                        "zip": "100006",
+      #                        "country": "China"
       #                      }
       #                    ]
       #     },
-      #     "postings": []
+      #     "postings": [
+      #                 {
+      #                   "posting_id": 119182978,
+      #                   "site_id": 18062,
+      #                   "site_name": "Poached Jobs",
+      #                   "status": "Active - Removal in Process",
+      #                   "ordered_date": "2020-03-25T13:23:00",
+      #                   "expired_date": "2020-04-25T00:00:00",
+      #                   "view_url": null,
+      #                   "product_id": 156542,
+      #                   "location": {
+      #                     "city": "Beijing",
+      #                     "state": "CN-11",
+      #                     "country": "CN",
+      #                     "zip": "100006"
+      #                   },
+      #                   "analytics": {
+      #                     "views": null,
+      #                     "visits": 0,
+      #                     "apps": 0,
+      #                     "interviews": null
+      #                   }
+      #                 },
+      #                 {
+      #                   "posting_id": 119182977,
+      #                   "site_id": 23932,
+      #                   "site_name": "Remote.co",
+      #                   "status": "Active - Removal in Process",
+      #                   "ordered_date": "2020-03-25T12:43:00",
+      #                   "expired_date": "2020-04-25T00:00:00",
+      #                   "view_url": null,
+      #                   "product_id": 183806,
+      #                   "location": {
+      #                     "city": "Beijing",
+      #                     "state": "CN-11",
+      #                     "country": "CN",
+      #                     "zip": "100006"
+      #                   },
+      #                   "analytics": {
+      #                     "views": null,
+      #                     "visits": 0,
+      #                     "apps": 0,
+      #                     "interviews": null
+      #                   }
+      #                 },
+      #                 {
+      #                   "posting_id": 119182976,
+      #                   "site_id": 16445,
+      #                   "site_name": "Culinary Agents",
+      #                   "status": "Active - Delivery in Process",
+      #                   "ordered_date": "2020-03-25T12:37:00",
+      #                   "expired_date": "2020-04-25T00:00:00",
+      #                   "view_url": null,
+      #                   "product_id": 187336,
+      #                   "location": {
+      #                     "city": "Beijing",
+      #                     "state": "CN-11",
+      #                     "country": "CN",
+      #                     "zip": "100006"
+      #                   },
+      #                   "analytics": {
+      #                     "views": null,
+      #                     "visits": 0,
+      #                     "apps": 0,
+      #                     "interviews": null
+      #                   }
+      #                 },
+      #                 {
+      #                   "posting_id": 119182990,
+      #                   "site_id": 18062,
+      #                   "site_name": "Poached Jobs",
+      #                   "status": "Active - Delivery in Process",
+      #                   "ordered_date": "2020-03-25T23:06:00",
+      #                   "expired_date": "2020-04-25T00:00:00",
+      #                   "view_url": null,
+      #                   "product_id": 156542,
+      #                   "location": {
+      #                     "city": "Beijing",
+      #                     "state": "CN-11",
+      #                     "country": "CN",
+      #                     "zip": "100006"
+      #                   },
+      #                   "analytics": {
+      #                     "views": null,
+      #                     "visits": 0,
+      #                     "apps": 0,
+      #                     "interviews": null
+      #                   }
+      #                 }
+      #               ]
       #   }
       def get(opts = {})
         path = '/api/employer/jobs/jobdetails'
