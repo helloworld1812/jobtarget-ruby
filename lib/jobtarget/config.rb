@@ -6,7 +6,8 @@ module Jobtarget
   class Config
     DEFAULT_LOGGER = Logger.new(nil)
     DEFAULT_BASE_URL = "https://stagingatsapi.jobtarget.com".freeze
-    DEFAULT_TIMEOUT = 30.freeze
+    DEFAULT_OPEN_TIMEOUT = 10
+    DEFAULT_READ_TIMEOUT = 30
 
     class << self
       attr_accessor :p_token, :base_url, :logger, :read_timeout, :open_timeout
@@ -15,8 +16,8 @@ module Jobtarget
         @p_token = p_token
         @base_url = base_url || DEFAULT_BASE_URL
         @logger = DEFAULT_LOGGER
-        @read_timeout = DEFAULT_TIMEOUT
-        @read_timeout = DEFAULT_TIMEOUT
+        @read_timeout = DEFAULT_READ_TIMEOUT
+        @open_timeout = DEFAULT_OPEN_TIMEOUT
         self
       end
 
@@ -24,8 +25,8 @@ module Jobtarget
         @base_url = DEFAULT_BASE_URL
         @p_token = nil
         @logger = DEFAULT_LOGGER
-        @read_timeout = DEFAULT_TIMEOUT
-        @read_timeout = DEFAULT_TIMEOUT
+        @read_timeout = DEFAULT_READ_TIMEOUT
+        @open_timeout = DEFAULT_OPEN_TIMEOUT
       end
 
       def ensure!(*params)

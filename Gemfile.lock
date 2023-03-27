@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jobtarget-ruby (0.1.0)
+    jobtarget-ruby (0.1.1)
       httparty (>= 0.10)
 
 GEM
